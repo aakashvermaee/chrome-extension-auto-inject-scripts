@@ -1,0 +1,15 @@
+{
+  "name": "Injectable Scripts",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Inject my scripts!",
+  "homepage_url": "http://localhost",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Injecting Scripts!"
+  },
+  "permissions": ["https://*/*", "http://*/*", "tabs"]
+}
