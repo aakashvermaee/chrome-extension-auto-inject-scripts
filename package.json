@@ -1,0 +1,22 @@
+{
+  "name": "injectable-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "rimraf": "5.0.5",
+    "rollup": "4.9.6",
+    "rollup-plugin-chrome-extension": "3.6.12",
+    "rollup-plugin-uglify": "6.0.4"
+  }
+}

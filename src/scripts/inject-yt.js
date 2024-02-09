@@ -1,6 +1,4 @@
 (function () {
-  console.log("----> Start injecting YouTube scripts");
-
   document.onkeyup = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -9,6 +7,4 @@
       document.querySelector("#guide-button")?.click();
     }
   };
-
-  console.log("----> finished injecting YouTube scripts");
 })();
