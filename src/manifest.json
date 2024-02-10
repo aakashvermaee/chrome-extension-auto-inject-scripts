@@ -5,7 +5,7 @@
   "description": "Inject my scripts!",
   "homepage_url": "http://localhost",
   "background": {
-    "service_worker": "sw.js",
+    "service_worker": "background.js",
     "type": "module"
   },
   "permissions": ["tabs", "bookmarks", "scripting", "activeTab"],
