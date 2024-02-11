@@ -7,5 +7,5 @@ export const enum TAB_STATUS {
 export const enum SELECTORS {
   YT_SEARCH_BOX = 'search',
   YT_GUIDE_BTN = '#guide-button',
-  NETFLIX_SKIP_INTO_BTN = '.ltr-1mjzmhv'
+  NETFLIX_SKIP_INTO_BTN = '.ltr-bf8b0m'
 }

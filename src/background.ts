@@ -7,11 +7,19 @@ console.log(`----> Loading background scripts`);
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (changeInfo.status !== TAB_STATUS.COMPLETE) return;
 
-  await register(tabId, tab);
+  try {
+    await register(tabId, tab);
+  } catch (error) {
+    console.log('----> error caught in chrome.tabs.onUpdated', error);
+  }
 });
 
 chrome.tabs.onRemoved.addListener(async (tabId, removeInfo) => {
-  if (removeInfo.isWindowClosing) {
-    await unregister(tabId);
+  try {
+    if (removeInfo.isWindowClosing) {
+      await unregister(tabId);
+    }
+  } catch (error) {
+    console.log('----> error caught in chrome.tabs.onRemoved', error);
   }
 });
